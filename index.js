@@ -19,7 +19,7 @@ const [ title, description, installation, usage, license, test, GitHub, email ] 
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeFile('./README.md', data, error => {
+    fs.writeFile('./RM/README.md', data, error => {
         if(error) {
             console.log(error)
             return
@@ -87,7 +87,7 @@ function init() {
             type: 'list',
             name: 'license',
             message: license,
-            choices: ['Apache', 'CC0', 'MIT', 'GNU GPLv3', 'None'],
+            choices: ['Apache', 'MIT', 'GNU GPLv3', 'None'],
             validate: confirmVal => {
                 if (confirmVal) {
                     return true
