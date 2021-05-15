@@ -9,18 +9,19 @@ const questions = [
     'Please describe your project',
     'How do I install your app?',
     'What is this app used for?',
+    'What license is being used for this project?',
     'What guidlines exist for contributing to this project?',
     'How will a user test this app?',
     'What is your GitHub Username?',
     'What is your email address?'
 ];
 
-const [ title, description, installation, usage, license, test, GitHub, email ] = questions;
+const [title, description, installation, usage, license, guidelines, test, GitHub, email] = questions;
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
     fs.writeFile('./RM/README.md', data, error => {
-        if(error) {
+        if (error) {
             console.log(error)
             return
         }
@@ -45,7 +46,7 @@ function init() {
             }
         },
         {
-            type:'input',
+            type: 'input',
             name: 'description',
             message: description,
             validate: confirmVal => {
@@ -99,6 +100,19 @@ function init() {
         },
         {
             type: 'input',
+            name: 'guidelines',
+            message: guidelines,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please try again!')
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'test',
             message: test,
             validate: confirmVal => {
@@ -141,12 +155,12 @@ function init() {
 
 // Function call to initialize app
 init()
-.then(readmeData => {
-    return genMD(readmeData);
-})
-.then(pageMD => {
-    return writeToFile(pageMD);
-})
-.catch(error => {
-    console.log(error)
-});
+    .then(readmeData => {
+        return genMD(readmeData);
+    })
+    .then(pageMD => {
+        return writeToFile(pageMD);
+    })
+    .catch(error => {
+        console.log(error)
+    });
