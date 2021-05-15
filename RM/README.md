@@ -1,28 +1,32 @@
 
-  # README-Creator
-
+  # README.md
+  ![License Badge](https://img.shields.io/badge/License-_Apache-blueviolet)
 
   ## Table of Contents
   *[Description](#description)
   *[Installation](#installation)
   *[Usage](#usage)
-  *[License]
+  *[License](#license)
   *[Test](#test)
   *[Questions](#questions)
 
   ## Description
-  Generate project markdown files in a professional way, allowing others to understand the project and collaborate.
+  Professional README.md generator
 
   ## Installation
-  Please clone the repo to your local machine, run 'npm install' and then 'node index.js' in the command line
+  clone repo, run 'npm install' for dependencies, run 'node index.js' in command line to initialize
 
   ## Usage
-  creating professional README.MD files
+  helping busy developers create markdowns to assist in describing their project
 
+  ## License
+  This project has been licensed under the Apache guidelines. To learn more, [click here](https://choosealicense.com/licenses/)
 
+  ## Guidelines
+  None at this time
 
   ## Test
-  there are no tests at this time for this app
+  There are not currently tests available for this app
 
   ## Questions
   Contact me with any additonal questions through these channels:
