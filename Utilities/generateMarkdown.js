@@ -15,7 +15,7 @@ function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
   } else {
-    return '*[License](#license)'
+    return '* [License](#license)'
   }
 }
 
@@ -36,12 +36,12 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  *[Description](#description)
-  *[Installation](#installation)
-  *[Usage](#usage)
+  * [Description](#escription)
+  * [Installation](#installation)
+  * [Usage](#usage)
   ${renderLicenseLink(data.license)}
-  *[Test](#test)
-  *[Questions](#questions)
+  * [Test](#test)
+  * [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -63,8 +63,8 @@ function generateMarkdown(data) {
 
   ## Questions
   Contact me with any additonal questions through these channels:
-  *GitHub - [${data.GitHub}](https://github.com/${data.GitHub})
-  *Email - ${data.email}
+  * GitHub - [${data.GitHub}](https://github.com/${data.GitHub})
+  * Email - ${data.email}
 `;
 }
 

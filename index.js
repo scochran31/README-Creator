@@ -10,7 +10,7 @@ const questions = [
     'How do I install your app?',
     'What is this app used for?',
     'What license is being used for this project?',
-    'What guidlines exist for contributing to this project?',
+    'What guidelines exist for contributing to this project?',
     'How will a user test this app?',
     'What is your GitHub Username?',
     'What is your email address?'
