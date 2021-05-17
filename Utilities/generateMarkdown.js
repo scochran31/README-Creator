@@ -1,13 +1,17 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  const urlBadge = license.replace('', '_')
   if (license === 'none') {
     return '';
-  } else {
-    return `![License Badge](https://img.shields.io/badge/License-${urlBadge}-blueviolet)`;
-  }
+  } if (license === 'MIT') {
+       return `![License Badge](https://img.shields.io/badge/License-MIT-blueviolet.svg)`
+   } else if (license === 'Apache') {
+        return `![License Badge](https://img.shields.io/badge/License-Apache-brightgreen.svg)`
+   } else if (license === 'GNU GPLv3') {
+        return `![License Badge](https://img.shields.io/badge/License-GNU_GPLv3-red.svg)`
+   }
 }
+
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -24,8 +28,12 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === 'None') {
     return '';
-  } else {
-    return `This project has been licensed under the ${license} guidelines. To learn more, [click here](https://choosealicense.com/licenses/)`
+  } else if (license === 'Apache') {
+    return `[Apache](https://choosealicense.com/licenses/apache-2.0/)`
+  } else if (license === 'MIT') {
+    return `[MIT](https://choosealicense.com/licenses/mit/)`
+  } else if (license === 'GNU GPLv3') {
+    return `[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)`
   }
 }
 
@@ -36,7 +44,7 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  * [Description](#escription)
+  * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
   ${renderLicenseLink(data.license)}
@@ -49,7 +57,7 @@ function generateMarkdown(data) {
   ## Installation
   ${data.installation}
 
-  ## Usage
+  ## How to Use
   ${data.usage}
 
   ## License
