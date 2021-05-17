@@ -1,32 +1,32 @@
 
   # README-Creator
-  ![License Badge](https://img.shields.io/badge/License-_MIT-blueviolet)
+  ![License Badge](https://img.shields.io/badge/License-GNU_GPLv3-red.svg)
 
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  *[License](#license)
+  * [License](#license)
   * [Test](#test)
   * [Questions](#questions)
 
   ## Description
-  Use a command line app to generate a high quality markdown file.
+  A command line based application to create high quality, professional markdown files.
 
   ## Installation
-  Clone the GitHub Repository to your local machine then run 'npm install' to download the required dependencies.
+  Clone the GitHub repository to your machine and then run 'npm install' to download the required dependencies for the application.
 
-  ## Usage
-  Creating a professional markdown file using a command line application. Open your command line, enter 'node index.js', then answer each question as it is generated. You will be asked which licensing you are using from a drop down menu. Select your option, then watch the magic happen.
+  ## How to Use
+  Run 'node index.js' in your command line. Answer each question as you are prompted. Hit enter after entering in your information. Select the licensing that you wish to use and then leave your contact information. You will then have a markdown file created for you in the blink of an eye!
 
   ## License
-  This project has been licensed under the MIT guidelines. To learn more, [click here](https://choosealicense.com/licenses/)
+  [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 
   ## Guidelines
-  No guidelines are currently in existence for this project.
+  There are not currently guidelines for contributing to this project.
 
   ## Test
-  No tests are available at this time.
+  There are not currently tests in existence for this app.
 
   ## Questions
   Contact me with any additonal questions through these channels:

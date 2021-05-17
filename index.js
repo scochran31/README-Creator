@@ -8,7 +8,7 @@ const questions = [
     'What is your project title?',
     'Please describe your project',
     'How do I install your app?',
-    'What is this app used for?',
+    'How do you use this app?',
     'What license is being used for this project?',
     'What guidelines exist for contributing to this project?',
     'How will a user test this app?',
