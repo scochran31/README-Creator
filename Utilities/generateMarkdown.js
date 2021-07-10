@@ -49,6 +49,7 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   ${renderLicenseLink(data.license)}
   * [Test](#test)
+  * [Links](#links)
   * [Questions](#questions)
 
   ## Description
@@ -68,6 +69,10 @@ function generateMarkdown(data) {
 
   ## Test
   ${data.test}
+
+  ## Links
+  * ${data.repo}
+  * ${data.deployed}
 
   ## Questions
   Contact me with any additonal questions through these channels:

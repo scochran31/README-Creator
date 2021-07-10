@@ -12,11 +12,13 @@ const questions = [
     'What license is being used for this project?',
     'What guidelines exist for contributing to this project?',
     'How will a user test this app?',
+    'What is the link to your GitHub Repository?',
+    'What is the link to your deployed application?',
     'What is your GitHub Username?',
     'What is your email address?'
 ];
 
-const [title, description, installation, usage, license, guidelines, test, GitHub, email] = questions;
+const [title, description, installation, usage, license, guidelines, test, repo, deployed, GitHub, email] = questions;
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
@@ -115,6 +117,32 @@ function init() {
             type: 'input',
             name: 'test',
             message: test,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please try again!')
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'repo',
+            message: repo,
+            validate: confirmVal => {
+                if (confirmVal) {
+                    return true
+                } else {
+                    console.log('Please try again!')
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'deployed',
+            message: deployed,
             validate: confirmVal => {
                 if (confirmVal) {
                     return true
